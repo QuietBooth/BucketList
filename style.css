@@ -1,98 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Poppins&display=swap');
 
-body{
-    background: url("https://kq-storage.s3.ap-south-1.amazonaws.com/Github/bucketlist/bucket-list-bg%5B1%5D.png");
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-    background-size: 100% 35vh;
+body {
     font-family: 'Poppins', sans-serif;
+    background-image: url(https://kq-storage.s3.ap-south-1.amazonaws.com/Github/bucketlist/bucket-list-bg%5B1%5D.png);
+    height: 100vh;
+    width: 50vw;
+    background-size: 100% 30%;
+    display: block;
+    margin: auto;
+    background-color: hsl(0, 0%, 90%);
+    background-repeat: no-repeat;
+    font-size: 20px;
 }
 
-.container{
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
+.container {
+
+    display: block;
 }
-.heading{
-    margin-top: 5vh;
+
+h1 {
     color: white;
-    font-size: 40px;
-}
-
-.input-container{
-    width: 100%;
     text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 900;
 }
 
-.input-field{
-    width: 25%;
+#input-field {
+    border: double 1px black;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 400px;
     height: 40px;
-    border: 1px solid #F7BE38;
-    border-radius: 20px;
-    font-size: 18px;
+    margin-left: 260px;
+    position: relative;
 }
 
-input:focus, button:focus{
-    outline: none
+.btn-submit {
+    border: double 1px black;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 60px;
+    height: 43px;
+    /* margin-right: 190px; */
+    margin-left: -3%;
+    background-color: #F7BE3B;
+    position: fixed;
 }
 
-.btn-submit{
-    width: 5%;
-    height: 45px;
-    border-radius: 20px;
-    background-color: #F7BE38;
-    font-weight: bold;
-    position: absolute;
-    margin-left: -4%;
-    font-size: 18px;
+.list-container {
+    margin: auto;
+    display: block;
 }
 
-h2{
-    font-size: 28px;
+h2 {
+    color: #13243E;
+    ;
+    margin-left: 240px;
+    margin-top: 140px;
+    font-size: 30px;
 }
 
-.hint{
-    font-size: 18px;
-    line-height: 20px;
-}
-
-.list-container{
-    width: 100%;
-    margin-top: 20vh;
-    margin-bottom: 10vh;
-    color : #13243E;
-}
-
-.list{
-    width: 30%;
-    list-style-type: none;
-    border: 1px solid #828282;
-    margin-left: 33%;
-    text-align: start;
-    padding: 1%;
-    margin-top: 1%;
-    border-radius: 25px;
-    color : #13243E;
-}
-.checked{
-    float: right;
-}
-
-.btn-reset{
-    width: 15%;
-    height: 5.8vh;
-    border-radius: 20px;
-    border: 1px solid #F7BE38;
-    background-color: #F7BE38;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.footer{
+.hint {
+    margin-top: 50px;
     text-align: center;
-    margin-top: 5%;
+    font-size: 25px;
 }
 
-.footer > a{
-   color:black;
+#list-container {
+    margin-top: 20px;
+    text-align: left;
+    /* list-style-position: inside; */
+    font-weight: 900;
+    font-size: 25px;
+    border: black solid 1px;
+    border-radius: 20px;
+    width: 500px;
+    margin-left: 230px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    /* border: 1px solid #000000; */
+}
+
+ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #000000;
+
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+.btn-reset {
+    border: #000000 solid 0px;
+    border-radius: 15px;
+    background-color: #F7BE3B;
+    position: fixed;
+    height: 40px;
+    width: 200px;
+    margin-left: 360px;
+    font-size: 20px;
+}
+
+.footer {
+    margin-top: 200px;
+    margin-left: 335px;
+    position: fixed;
+}
+
+li{
+
+  display: flex;
+  justify-content: space-between;
 }
